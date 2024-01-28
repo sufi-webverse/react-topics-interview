@@ -4,7 +4,7 @@ import LCButton from "../components/Button";
 const PostListCard = ({ id, title, body }) => {
   return (
     <>
-      <div className="rounded shadow p-6 bg-indigo-500" key={id}>
+      <div className="rounded shadow p-6" key={id}>
         <h2>{title}</h2>
         <p>{body}</p>
       </div>
@@ -28,7 +28,7 @@ const PostList = function () {
   return (
     <>
       <LCButton text="submit" onClick={()=>alert('clicked')} />
-      <div>
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-3 h-40 ">
         {posts &&
           posts.map(function (post) {
             return (
