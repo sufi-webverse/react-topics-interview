@@ -8,31 +8,20 @@ import { useEffect, useState } from "react";
 // functional -> no state, thats why we use hooks
 
 import PostList from "./pages/PostList";
-
-const Calculator = ()=> {
-
-  return <>
-      <div>
-        <div>
-          Calculator
-        </div>
-      </div>
-  </>
-}
-
+import Users from "./pages/Users";
 
 const App = function () {
+
   const [counter, setCounter] = useState(0);
   const [decCounter, setDecCounter] = useState(10);
 
   useEffect(() => {
-    console.log("App rendering");
-  }, [counter, decCounter]);
+    console.log("App rendering"); 
+  }, [counter]);
 
   return (
     <>
-      <Calculator />
-      <PostList />
+      <Users />
     </>
   );
 };

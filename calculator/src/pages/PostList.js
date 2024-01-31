@@ -27,8 +27,8 @@ const PostList = function () {
 
   return (
     <>
-      <LCButton text="submit" onClick={()=>alert('clicked')} />
-      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-3 h-40 ">
+    
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 gap-3 h-40 p-20">
         {posts &&
           posts.map(function (post) {
             return (
